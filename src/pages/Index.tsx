@@ -15,6 +15,7 @@ const Index = () => {
   const { toast } = useToast();
   const phoneNumber = "7075087601";
   const linkedinUrl = "https://www.linkedin.com/company/evodigit/";
+  const emailAddress = "evodigit79@gmail.com";
 
   const handleGetStarted = () => {
     window.open(`https://wa.me/${phoneNumber}`, '_blank');
@@ -254,6 +255,10 @@ const Index = () => {
                   <p className="text-gray-400 flex items-center">
                     <Phone className="mr-2 h-4 w-4 text-gold" />
                     {phoneNumber}
+                  </p>
+                  <p className="text-gray-400 flex items-center">
+                    <Mail className="mr-2 h-4 w-4 text-gold" />
+                    {emailAddress}
                   </p>
                   <a 
                     href={linkedinUrl}
